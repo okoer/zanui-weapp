@@ -3,18 +3,21 @@ Page(Object.assign({}, {
     stepper1: {
       stepper: 10,
       min: 1,
-      max: 20
+      max: 20,
+      understock:true
     },
     stepper2: {
       stepper: 10,
       min: 1,
-      max: 20
+      max: 20,
+      understock: true
     },
     stepper3: {
       stepper: 10,
       min: 1,
       max: 20,
-      step: 2
+      step: 2,
+      understock: false
     }
   },
 

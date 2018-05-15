@@ -5,6 +5,7 @@
         stepper="{{ stepper1.stepper }}"
         min="{{ stepper1.min }}"
         max="{{ stepper1.max }}"
+        understock="{{stepper1.understock}}"
         data-component-id="stepper1"
         bind:change="handleZanStepperChange"
       >
@@ -19,6 +20,7 @@
         stepper="{{ stepper2.stepper }}"
         min="{{ stepper2.min }}"
         max="{{ stepper2.max }}"
+         understock="{{stepper2.understock}}"
         size="small"
         data-component-id="stepper2"
         bind:change="handleZanStepperChange"
@@ -33,6 +35,7 @@
         stepper="{{ stepper3.stepper }}"
         min="{{ stepper3.min }}"
         max="{{ stepper3.max }}"
+        understock="{{stepper3.understock}}"
         step="{{ stepper3.step }}"
         data-component-id="stepper3"
         bind:change="handleZanStepperChange"
