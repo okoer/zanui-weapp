@@ -16,6 +16,10 @@ Component({
     step: {
       type: Number,
       value: 1
+    },
+    understock:{
+      type:Boolean,
+      value: false
     }
   },
 
