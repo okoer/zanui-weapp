@@ -21,6 +21,10 @@ Component({
     selectedId: {
       type: [String, Number],
       value: ''
+    },
+    selectColor: {
+      type: String,
+      value: ''
     }
   },
 

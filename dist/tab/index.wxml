@@ -10,7 +10,7 @@
     >
       <template
         is="zan-tab-list"
-        data="{{ list, selectedId, height }}"
+        data="{{ list, selectedId, height,selectColor }}"
       />
     </scroll-view>
   </block>
@@ -21,7 +21,7 @@
     >
       <template
         is="zan-tab-list"
-        data="{{ list, selectedId, height }}"
+        data="{{ list, selectedId, height,selectColor }}"
       />
     </view>
   </block>
@@ -33,13 +33,13 @@
   <view
     wx:for="{{ list }}"
     wx:key="id"
-    class="zan-tab__item {{ selectedId == item.id ? 'zan-tab__item--selected' : '' }}"
+    class="zan-tab__item"
     data-item-id="{{ item.id }}"
     bindtap="_handleZanTabChange"
   >
     <view
       class="zan-tab__title"
-      style="{{ height ? 'height:' + height + 'px;line-height:' + height + 'px' : '' }}"
+      style="{{ height ? 'height:' + height + 'px;line-height:' + height + 'px;' : ';'}} {{selectedId == item.id ?'border-bottom:2px solid '+selectColor +';color:'+selectColor:''}}"
     >
       {{ item.title }}
     </view>
