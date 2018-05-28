@@ -1,6 +1,7 @@
 const DEFAULT_COLOR = '#fff';
 const DEFAULT_BACKGROUND_COLOR = '#f44';
 const DEFAULT_FONT_SIZE = 10;
+const DEFAULT_WIDTH = '1.6em';
 const DEFAULT_BOX_SHADOW = '0 0 0 2px #fff';
 
 Component({
@@ -20,6 +21,10 @@ Component({
     boxShadow: {
       type: String,
       value: DEFAULT_BOX_SHADOW
+    },
+    width:{
+      type: String,
+      value: DEFAULT_WIDTH
     }
   }
 });
